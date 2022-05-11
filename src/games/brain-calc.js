@@ -23,9 +23,7 @@ const gameCheck = () => {
   return [question, answer];
 };
 
-function calcGame() {
-    return gamePlay(rulesOfGame, gameCheck);
-}
+const calcGame = () => gamePlay(rulesOfGame, gameCheck);
 
 export default calcGame;
 
