@@ -2,7 +2,7 @@ import _ from 'lodash';
 import gamePlay from '../index.js';
 import getRandomNumber from '../getRandomNumber.js';
 
-const rulesOfGame = 'What is the result of the expression?.';
+const rulesOfGame = 'What is the result of the expression?';
 
 const listOperators = ['+', '-', '*'];
 

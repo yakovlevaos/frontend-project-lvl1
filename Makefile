@@ -6,6 +6,8 @@ brain-even:
 	node bin/brain-evenStart.js
 brain-calc:
 	node bin/brain-calcStart.js
+brain-gcd:
+	node bin/brain-gcdStart.js
 publish:
 	npm publish --dry-run
 lint:
