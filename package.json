@@ -6,7 +6,8 @@
   "main": "index.js",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-even": "bin/brain-evenStart.js",
+    "brain-calc": "bin/brain-calcStart.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,5 +27,8 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^26.1.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
