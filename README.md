@@ -6,3 +6,5 @@
 ![workflow build](https://github.com/yakovlevaos/frontend-project-lvl1/actions/workflows/app-actions.yml/badge.svg?event=push)
 
 https://asciinema.org/a/53cDs7BbvnSUCzqmvD7FF8rEh
+
+https://asciinema.org/a/YF9dzE1HMtUsov00PxbfZhtNd
