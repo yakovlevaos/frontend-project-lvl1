@@ -1,29 +1,27 @@
 import _ from 'lodash';
 import gamePlay from '../index.js';
-import getRandomNumber from '../getRandomNumber.js';
 
 const rulesOfGame = 'What is the result of the expression?';
-
 const listOperators = ['+', '-', '*'];
 
-const calc = (num1, num2, operator) => {
-    switch (operator) {
-      case '+': return num1 + num2;
-      case '-': return num1 - num2;
-      case '*': return num1 * num2;
-      default:
-      throw new Error(`Unknown operator: '${operator}'!`);
-    }
-  };
-  
-function gameCheck() {
-    const num1 = getRandomNumber(1, 100);
-    const num2 = getRandomNumber(1, 100);
-    const operator = listOperators[_.random(listOperators.length - 1)];
-    const question = `${num1} ${operator} ${num2}`;
-    const answer = String(calc(num1, num2, operator));
-    return [question, answer];
-}
+const calc = (numberFirst, numberSecond, operator) => {
+  switch (operator) {
+    case '+': return numberFirst + numberSecond;
+    case '-': return numberFirst - numberSecond;
+    case '*': return numberFirst * numberSecond;
+    default:
+      throw new Error(`Wrong operator - ${operator}, use (+ or - or *)`);
+  }
+};
+
+const gameCheck = () => {
+  const numberFirst = _.random(1, 50);
+  const numberSecond = _.random(1, 50);
+  const operator = listOperators[_.random(listOperators.length - 1)];
+  const question = `${numberFirst} ${operator} ${numberSecond}`;
+  const answer = String(calc(numberFirst, numberSecond, operator));
+  return [question, answer];
+};
 
 function calcGame() {
     return gamePlay(rulesOfGame, gameCheck);
