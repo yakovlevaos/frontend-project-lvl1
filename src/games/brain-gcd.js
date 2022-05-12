@@ -10,7 +10,6 @@ const getGcd = (num1, num2) => {
   return getGcd(num2, num1 % num2);
 };
 
-
 function gameCheck() {
   const num1 = getRandomNumber(1, 100);
   const num2 = getRandomNumber(1, 100);
