@@ -9,12 +9,10 @@ const getProgression = (number, step) => {
   for (let i = 0; i < 10; i += 1) {
     if (newArray.length === 10) {
       return newArray;
-    } else {
-
+    }
       nextNumber += step;
       newArray.push(nextNumber);
-    }
-  } return;
+  }
 };
 
 function gameCheck() {
