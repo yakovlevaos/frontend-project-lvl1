@@ -7,7 +7,6 @@ function gamePlay(rulesOfGame, gameCheck) {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${userName}!`);
   console.log(`${rulesOfGame}`);
-
   for (let i = 0; i < numberOfRounds; i += 1) {
     const [question, answer] = gameCheck();
     console.log(`Question: ${question}`);
@@ -16,9 +15,7 @@ function gamePlay(rulesOfGame, gameCheck) {
       console.log(`'${userReply}' is wrong answer ;(. Correct answer was '${answer}'.`);
       console.log(`Let's try again, ${userName}!`);
       return;
-
-    } console.log(`Correct!`);
-
+    } console.log('Correct!');
   } console.log(`Congratulations, ${userName}!`);
 }
 export default gamePlay;

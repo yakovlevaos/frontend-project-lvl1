@@ -4,15 +4,17 @@ import getRandomNumber from '../getRandomNumber.js';
 const rulesOfGame = 'What number is missing in the progression?';
 
 const getProgression = (number, step) => {
-  let newArray = [number];
+  const newArray = [number];
   let nextNumber = number;
   for (let i = 0; i < 10; i += 1) {
     if (newArray.length === 10) {
       return newArray;
-    } else
-      nextNumber = nextNumber + step;
+    } else {
+
+      nextNumber += step;
       newArray.push(nextNumber);
-  } return newArray;
+    }
+  } return;
 };
 
 function gameCheck() {

@@ -24,5 +24,5 @@ function gameCheck() {
 function primeGame() {
   return gamePlay(rulesOfGame, gameCheck);
 }
- 
+
 export default primeGame;
